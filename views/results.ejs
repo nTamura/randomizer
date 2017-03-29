@@ -1,0 +1,18 @@
+<%- include('./partials/header') %>
+
+  <div class="container">
+
+    <h1>Super Team Randomizer</h1>
+    <h3>Here are the randomized teams: </h3>
+    <div class="well">
+
+    <% if(teams) { %>
+      <% for (let name of teams) { %>
+        <p><%= `${name}` %></p>
+      <% } %>
+    <% } %>
+
+
+  </div>
+
+<%- include('./partials/footer') %>
